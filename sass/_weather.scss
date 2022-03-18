@@ -1,0 +1,107 @@
+#weather {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    flex-wrap: wrap;
+
+    .result {
+        border: solid 1px #fff;
+        padding: 15px;
+        background: #443333b9;
+        width: 100%;
+
+        @include break(smartphone) {
+            width: auto;
+        }
+
+        &__text {
+            color: #fff;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        &__btns {
+            display: flex;
+            justify-content: center;
+
+            &--input {
+                margin: 15px 0px;
+                padding: 15px;
+                background: transparent;
+                border: solid 1px #fff;
+                color: #fff;
+                width: 81%;
+                border-right: none;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                outline: none;
+            }
+
+            &--btn {
+                position: relative;
+                top: 15px;
+                right: 6px;
+                background: transparent;
+                border: solid 1px #fff;
+                border-left: none;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                cursor: pointer;
+                padding-right: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 47px;
+
+                &>span {
+                    background: transparent;
+                    color: #fff;
+                    padding: 9px 2px 9px 0px;
+                    font-size: 27px;
+                }
+            }
+        }
+
+
+
+
+
+        &__temperature {
+            text-align: center;
+            font-size: 25px;
+            color: #Fff;
+            margin-bottom: 25px;
+        }
+
+        &__city {
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+            margin: 25px 0px;
+        }
+
+        &__pertemperature {
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        &__tempdescription {
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        &__wind {
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        &__icon {
+            text-align: center;
+            margin: 25px 0px;
+        }
+    }
+}
