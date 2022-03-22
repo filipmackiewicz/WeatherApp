@@ -1,9 +1,25 @@
-#weather {
+.weather {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 50vh;
     flex-wrap: wrap;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 0px 20px;
+        width: 100%;
+
+        @include break(smartphone) {
+            padding: 0px 100px;
+        }
+    }
 
     .result {
         border: solid 1px #fff;

@@ -14,17 +14,15 @@
     <header class="header">
         <h1 class="header__heading">Check the weather in your city !</h1>
     </header>
-    <section id="weather">
+    <section id="weather" class="weather">
         <div class="container">
-            <div id="weather">
+            <div class="form">
                 <div class="result">
                     <p class="result__text">Find your city</p>
                     <div class="result__btns">
                         <input type="search" class="result__btns--input" placeholder="City name..." value="Denver"
                             data-input>
-                        <button class="result__btns--btn" data-btn><span class="material-icons">
-                                search
-                            </span></button>
+                        <button class="result__btns--btn" data-btn><span class="material-icons">search</span></button>
                     </div>
                     <p class="result__city" data-city></p>
                     <p class="result__temperature" data-temperature></p>
@@ -36,8 +34,6 @@
             </div>
         </div>
     </section>
-    </main>
-
     <script src="./js/index.js"></script>
     <script>
         const weather = new Weather();
